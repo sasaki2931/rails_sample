@@ -22,4 +22,5 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  url: <%= ENV['postgres://sample_app_db_orxy_user:yKsatOwe570UMHvyuQoeYxuHBdCoMSfT@dpg-ciikbqiip7vpelrrl7n0-a/sample_app_db_orxy'] %>
